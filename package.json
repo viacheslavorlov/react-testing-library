@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test  --transformIgnorePatterns \"node_modules/(?!axios)/\"",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "e2e:test": "wdio run ./wdio.conf.js"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.3.5",
+    "@wdio/local-runner": "^8.3.5",
+    "@wdio/mocha-framework": "^8.3.0",
+    "@wdio/spec-reporter": "^8.3.0",
+    "chromedriver": "^110.0.0",
+    "wdio-chromedriver-service": "^8.0.1"
   }
 }

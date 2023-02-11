@@ -7,6 +7,7 @@ import Users from "../users/Users";
 import SingleUser from "../users/SingleUser";
 import ErrorPage from "../pages/ErrorPage";
 import {Counter} from "../Counter/Counter";
+import HelloWorldE2E from "../pages/HelloWorld";
 
 const AppRouter = () => {
 	return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
 			<Route path="/users" element={<Users/>}/>
 			<Route path="/users/:id" element={<SingleUser/>}/>
 			<Route path="/counter" element={<Counter/>}/>
+			<Route path="/hello" element={<HelloWorldE2E/>}/>
 			<Route path="/*" element={<ErrorPage/>}/>
 		</Routes>
 	);
