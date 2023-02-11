@@ -6,6 +6,7 @@ import ToggleComponent from "../toggle-component/ToogleComponent";
 import Users from "../users/Users";
 import SingleUser from "../users/SingleUser";
 import ErrorPage from "../pages/ErrorPage";
+import {Counter} from "../Counter/Counter";
 
 const AppRouter = () => {
 	return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
 			<Route path="/toogle" element={<ToggleComponent/>}/>
 			<Route path="/users" element={<Users/>}/>
 			<Route path="/users/:id" element={<SingleUser/>}/>
+			<Route path="/counter" element={<Counter/>}/>
 			<Route path="/*" element={<ErrorPage/>}/>
 		</Routes>
 	);
