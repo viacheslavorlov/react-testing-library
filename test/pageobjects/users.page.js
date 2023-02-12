@@ -28,14 +28,11 @@ class UsersPage extends Page {
     }
 
     async deleteUser() {
-
         try {
-
             const usersCount = await this.usersItems2.length;
             if (!usersCount) {
                 throw new Error('пользователи не найдены')
             }
-
             await this.usersItems2[0].$('.user-delete').click();
             const usersCountAfterDelete = await this.usersItems2.length
             if (usersCount - 1 !== usersCountAfterDelete) {

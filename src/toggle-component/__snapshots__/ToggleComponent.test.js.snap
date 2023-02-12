@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ToggleCompoonent renders learn react link 1`] = `
+<button
+  data-testid="toggle-btn"
+>
+  Click!
+</button>
+`;
+
+exports[`test ToggleCompoonent renders learn react link 2`] = `
+<input
+  placeholder="...input text..."
+  type="text"
+/>
+`;
